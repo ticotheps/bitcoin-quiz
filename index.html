@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tico's Bitcoin Quiz App</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  </head>
+
+  <main role="main">
+    <section role="region" class="initial-load flex-container">
+      <header role="banner" class="header flex-container">
+        <figure>
+          <a href="https://bitcoin.org/en/getting-started" target="_blank" role="button">
+            <img class="logo" src="https://images.cointelegraph.com/images/740_Ly9jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy85ZmQ5YjUyNjEyNGY5NWYyYmFhMWNkMWU0M2I1MTIxYi5qcGc=.jpg" alt="Bitcoin to the moon cartoon logo">
+          </a>
+        </figure>
+        <h1 class="title flex-container">Bitcoin: "The Internet of Money"</h1>
+      </header>
+
+      <section role="region" class="start-page flex-container">
+        <section class="intro flex-container">
+          <h2 class="intro-internet">The Internet has transformed how we use "communication"...</h2>
+          <section class="cf fill">
+            <div class="image image-bottom">
+            </div>
+            <div class="image image-top">
+            </div>
+          </section>
+          <h2 class="intro-bitcoin">but Bitcoin will revolutionize how we use "money"!</h2>
+          <h3 class="intro-test">Take our quiz to see if YOU have what it takes to join the revolution!</h3>
+          <section class="start-buttons-container flex-container">
+            <button class="quiz-start">Start Quiz Now</button>
+            <button class="watch-video">Learn About Bitcoin</button>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section role="region" class="question-page flex-container">
+      <section class="score flex-container">
+        <p class="current-score">Your Score: Correct = x; Incorrect = y</p>
+      </section>
+      <form role="form" class="quiz flex-container">
+        <fieldset>
+          <legend class="viewed-question-number">Quiz Question #x out of y</legend>
+          <section class="quiz-container flex-container">
+            <p class="quiz-question">Quiz question</p>
+            <section class="multiple-choices" role="radiogroup">
+              <p class="choice">
+                <input type="radio" role="radio" aria-checked="false" name="answer-choices" id="answer-choice-1" value="0">
+                <label for="answer-choice-1">Answer choice #1</label>
+              </p>
+              <p class="choice">
+                <input type="radio" role="radio" aria-checked="false" name="answer-choices" id="answer-choice-2" value="1">
+                <label for="answer-choice-2">Answer choice #2</label>
+              </p>
+              <p class="choice">
+                <input type="radio" role="radio" aria-checked="false" name="answer-choices" id="answer-choice-3" value="2">
+                <label for="answer-choice-3">Answer choice #3</label>
+              </p>
+              <p class="choice">
+                <input type="radio" role="radio" aria-checked="false" name="answer-choices" id="answer-choice-4" value="3">
+                <label for="answer-choice-4">Answer choice #4</label>
+              </p>
+              <p class="choice">
+                <input type="radio" role="radio" aria-checked="false" name="answer-choices" id="answer-choice-5" value="4">
+                <label for="answer-choice-5">Answer choice #5</label>
+              </p>
+            </section>
+          </section>
+          <section class="submit-button-container flex-container">
+            <button type="submit">Submit</button>
+          </section>
+        </fieldset>
+      </form>
+    </section>
+
+    <section role="region" class="feedback-page-correct flex-container">
+      <section class="feedback-correct-answer flex-container">
+        <h4>AWESOME JOB!</h4>
+        <p><img class="image-correct-answer" src="https://cdn.magnifymoney.com/2017/12/Bitcoin-Bannar.png" alt="Bitcoin rocket"></p>
+        <p>You got the correct answer! #BitcoinToTheMoon</p>
+        <section class="next-button-container flex-container">
+          <button class="next-button">Next Question</button>
+        </section>
+      </section>
+    </section>
+
+    <section role="region" class="feedback-page-incorrect flex-container">
+      <div class="feedback-incorrect-answer flex-container">
+        <h4>WHOOPS!</h4>
+        <p><img class="image-incorrect-answer" src="https://qph.fs.quoracdn.net/main-qimg-e58c3238ecf4f67984d5db38b83f8a4e-c" alt="Bitcoin cartoon falling"></p>
+        <p class="solution">The correct answer was:</p>
+        <section class="next-button-container flex-container">
+          <button class="next-button">Next Question</button>
+        </section>
+      </div>
+    </section>
+
+    <section role="region" class="final-page-summary flex-container">
+      <section class="final-page-pro flex-container">
+        <h5 class="completed-quiz">Thanks for completing the quiz!</h5>
+        <p class="score-summary">You got x questions out of y questions correct.</p>
+        <section class="bitcoin-pro">
+          <p>PERFECT SCORE! You're on your way to becoming a #BitcoinPro!</p>
+        </section>
+        <section class="final-buttons-container flex-container">
+          <button class="restart-quiz">Restart Quiz</button>
+        </section>
+      </section>
+
+      <section role="region" class="final-page-average flex-container">
+        <h5 class="completed-quiz">Thanks for completing the quiz!</h5>
+        <p class="score-summary">You got x questions out of y questions correct.</p>
+        <section class="bitcoin-average">
+          <p>Close, but no cigar! Try reviewing your Bitcoin basics and retaking the quiz to get a PERFECT score next time!</p>
+        </section>
+        <section class="final-buttons-container flex-container">
+          <button class="restart-quiz">Restart Quiz</button>
+        </section>
+      </section>
+
+      <section role="region" class="final-page-newbie flex-container">
+        <h5 class="completed-quiz">Thanks for completing the quiz!</h5>
+        <p class="score-summary">You got x questions out of y questions correct.</p>
+        <section class="bitcoin-newbie">
+          <p>Get back to the basics and try again, #BitcoinNewbie! Remember, it's okay to fail as long as you're failing 'FORWARD'!</p>
+        </section>
+        <section class="final-buttons-container flex-container">
+          <button class="restart-quiz">Restart Quiz</button>
+        </section>
+      </section>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </main>
+</html>
