@@ -352,7 +352,7 @@ button:hover {
   background-color: rgba(245, 238, 228, 0.986);
   border: solid gray 5px;
   border-radius: 7px;
-  margin: 20px 25px;
+  margin: 5px 25px 20px;
   padding: 10px 20px;
 }
 
@@ -389,7 +389,8 @@ form.quiz {
 .quiz-question {
   font-size: 30px;
   font-family: 'Dosis', sans-serif;
-  margin: 15px 50px 20px;
+  margin: 25px 50px 20px;
+  line-height: 1.5;
 }
 
 .multiple-choices {
@@ -401,6 +402,7 @@ form.quiz {
 
 label {
   margin-left: 15px;
+  line-height: 2;
   cursor: pointer;
 }
 
@@ -412,14 +414,14 @@ input[type='radio'] {
 .next-button-container,
 .final-buttons-container {
   justify-content: center;
-  margin: 20px;
+  margin: 20px auto 10px;
 }
 
 .feedback-page-correct,
 .feedback-page-incorrect,
 .final-page-summary {
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .feedback-correct-answer,
@@ -436,8 +438,8 @@ input[type='radio'] {
   border-radius: 5px;
   width: 100%;
   max-width: 900px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 30px 20px;
+  line-height: 1.5;
 }
 
 h4,
@@ -445,7 +447,7 @@ h5 {
   color: #da9008ec;
   font-family: 'Lobster', cursive;
   font-size: 60px;
-  margin: 0px;
+  margin: 10px;
   padding-top: 25px;
 }
 
@@ -453,6 +455,7 @@ h5 {
   height: 225px;
   width: 400px;
   border-radius: 7px;
+  margin: 20px auto;
 }
 
 .image-incorrect-answer {
@@ -468,6 +471,7 @@ h5 {
 .bitcoin-newbie {
   padding-left: 20px;
   padding-right: 20px;
+  margin: 25px auto 10px;
 }
 
 .restart-quiz {
