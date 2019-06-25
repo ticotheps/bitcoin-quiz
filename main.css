@@ -148,9 +148,7 @@ html {
   margin: auto;
   width: 100%;
   max-width: 1250px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
+  padding: 30px 20px 25px;
 }
 
 h1 {
