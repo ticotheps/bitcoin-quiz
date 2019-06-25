@@ -1,9 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 * {
   box-sizing: border-box;
 }
 
 main {
-  background-image: url("http://juliansarokin.com/wp-content/uploads/2013/11/8632995866_16c19e5510_o-1.jpg");
+  background-image: url('http://juliansarokin.com/wp-content/uploads/2013/11/8632995866_16c19e5510_o-1.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -79,7 +209,7 @@ h1 {
 
 .image {
   height: 312px;
-	width: 445px;
+  width: 445px;
   border: solid gray 5px;
   border-radius: 10px;
   position: absolute;
@@ -91,39 +221,39 @@ h1 {
 }
 
 .image-bottom {
-	background-image: url('https://www.cryptojunction.io/wp-content/uploads/2018/06/the-bitcoin-revolution-is-happening.jpg');
-	background-repeat: repeat;
-	background-position: center center;
-	background-size: 115%;
+  background-image: url('https://www.cryptojunction.io/wp-content/uploads/2018/06/the-bitcoin-revolution-is-happening.jpg');
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: 115%;
 }
 
 .image-top {
-	background-image: url('http://www.dospeedtest.com/modules/blog/dataimages/IMG_F69FC7-377E96-9EBDAC-15E05D-606A06-DAE4C8.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+  background-image: url('http://www.dospeedtest.com/modules/blog/dataimages/IMG_F69FC7-377E96-9EBDAC-15E05D-606A06-DAE4C8.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .image-top {
-animation-name: cfFadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 5s;
-animation-direction: alternate;
+  animation-name: cfFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
 }
 
 @keyframes cfFadeInOut {
   0% {
-    opacity:1;
+    opacity: 1;
   }
   45% {
-    opacity:1;
+    opacity: 1;
   }
   55% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:0;
+    opacity: 0;
   }
 }
 
@@ -146,13 +276,13 @@ button {
   cursor: pointer;
   font-size: 30px;
   background-color: white;
-  color:  #da9008ec;
+  color: #da9008ec;
   border: solid gray 4px;
   border-radius: 7px;
   padding: 15px 25px;
   margin-bottom: 20px;
   -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 button:hover {
@@ -231,19 +361,27 @@ label {
   cursor: pointer;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   cursor: pointer;
 }
 
-.submit-button-container, .next-button-container, .final-buttons-container {
+.submit-button-container,
+.next-button-container,
+.final-buttons-container {
   justify-content: center;
 }
 
-.feedback-page-correct, .feedback-page-incorrect, .final-page-summary {
+.feedback-page-correct,
+.feedback-page-incorrect,
+.final-page-summary {
   justify-content: center;
 }
 
-.feedback-correct-answer, .feedback-incorrect-answer, .final-page-pro, .final-page-average, .final-page-newbie {
+.feedback-correct-answer,
+.feedback-incorrect-answer,
+.final-page-pro,
+.final-page-average,
+.final-page-newbie {
   flex-direction: column;
   text-align: center;
   font-size: 24px;
@@ -257,7 +395,8 @@ input[type="radio"] {
   margin-right: 20px;
 }
 
-h4, h5 {
+h4,
+h5 {
   color: #da9008ec;
   font-family: 'Lobster', cursive;
   font-size: 60px;
@@ -277,21 +416,56 @@ h4, h5 {
   border-radius: 7px;
 }
 
-.solution, .score-summary, .bitcoin-pro, .bitcoin-average, .bitcoin-newbie {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.solution,
+.score-summary,
+.bitcoin-pro,
+.bitcoin-average,
+.bitcoin-newbie {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .restart-quiz {
   margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 700px) {
-  .header, h1, .logo, .start-page, .intro, .cf, .image, .image-bottom, .image-top, h2, h3, button, .next-button, .quiz-start, .watch-video, .score, fieldset, .viewed-question-number, .quiz-container, .quiz-question, .multiple-choices, label, .feedback-correct-answer, .feedback-incorrect-answer, h4, h5, .image-correct-answer, .image-incorrect-answer, .final-page-pro, .final-page-average, .final-page-newbie, .restart-quiz {
+  .header,
+  h1,
+  .logo,
+  .start-page,
+  .intro,
+  .cf,
+  .image,
+  .image-bottom,
+  .image-top,
+  h2,
+  h3,
+  button,
+  .next-button,
+  .quiz-start,
+  .watch-video,
+  .score,
+  fieldset,
+  .viewed-question-number,
+  .quiz-container,
+  .quiz-question,
+  .multiple-choices,
+  label,
+  .feedback-correct-answer,
+  .feedback-incorrect-answer,
+  h4,
+  h5,
+  .image-correct-answer,
+  .image-incorrect-answer,
+  .final-page-pro,
+  .final-page-average,
+  .final-page-newbie,
+  .restart-quiz {
     display: block;
     width: 90%;
     margin: 10px auto;
-    }
+  }
 
   .header {
     height: auto;
@@ -301,8 +475,8 @@ h4, h5 {
   }
 
   .logo {
-  height: 106px;
-  width: 159px;
+    height: 106px;
+    width: 159px;
   }
 
   h1 {
@@ -331,23 +505,24 @@ h4, h5 {
     margin-top: 5px;
   }
 
-  h4, h5 {
+  h4,
+  h5 {
     font-size: 30px;
     padding-top: 0px;
   }
 
   .cf {
-  height: 156px;
-	width: 223px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 15px;
-  margin-top: 0px;
+    height: 156px;
+    width: 223px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    margin-top: 0px;
   }
 
   .image {
     height: 156px;
-	  width: 223px;
+    width: 223px;
   }
 
   .current-score {
@@ -369,10 +544,10 @@ h4, h5 {
   }
 
   .multiple-choices {
-    font-size: 20px
+    font-size: 20px;
   }
 
-  input[type="radio"] {
+  input[type='radio'] {
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -387,15 +562,23 @@ h4, h5 {
   }
 
   .image-incorrect-answer {
-  height: 122px;
-  width: 243px;
+    height: 122px;
+    width: 243px;
   }
 
-  .feedback-correct-answer, .feedback-incorrect-answer, .final-page-pro, .final-page-average, .final-page-newbie {
+  .feedback-correct-answer,
+  .feedback-incorrect-answer,
+  .final-page-pro,
+  .final-page-average,
+  .final-page-newbie {
     font-size: 20px;
   }
 
-  .solution, .score-summary, .bitcoin-pro, .bitcoin-average, .bitcoin-newbie {
+  .solution,
+  .score-summary,
+  .bitcoin-pro,
+  .bitcoin-average,
+  .bitcoin-newbie {
     padding-left: 10px;
     padding-right: 10px;
   }
