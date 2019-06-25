@@ -136,7 +136,7 @@ main {
   background-image: url('http://juliansarokin.com/wp-content/uploads/2013/11/8632995866_16c19e5510_o-1.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: cover;
 }
 
 .flex-container {
@@ -150,6 +150,7 @@ main {
   max-width: 1250px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
 }
 
 h1 {
@@ -166,8 +167,8 @@ h1 {
 }
 
 .logo {
-  height: 106px;
-  width: 159px;
+  height: 88px;
+  width: 125px;
   border-radius: 10px;
   border: solid gray 5px;
 }
@@ -178,7 +179,7 @@ h1 {
 }
 
 .start-page {
-  margin-top: 0px;
+  margin-top: 10px;
   width: 100%;
   max-width: 900px;
   padding-left: 20px;
@@ -258,8 +259,8 @@ h1 {
 }
 
 h2 {
-  margin-top: 20px;
-  padding: 0px 15px 0px 15px;
+  margin: 10px auto;
+  padding: 10px 15px 0px 15px;
   font-size: 40px;
   font-family: 'Lobster', cursive;
   color: #da9008ec;
@@ -268,8 +269,7 @@ h2 {
 h3 {
   margin-top: 0px;
   font-size: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px;
 }
 
 button {
